@@ -129,7 +129,6 @@ public:
     }
     void calculateTails()
     {
-        std::cout << "Hello World";
     }
 };
 
