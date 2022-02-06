@@ -200,6 +200,7 @@ int main()
                 }
             }
         }
+
         player.move();
         player.eatFruit();
         player.calculateTails();
