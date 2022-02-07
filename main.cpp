@@ -33,6 +33,7 @@ public:
         {x + spriteW, y},
         {x, y + spriteH},
         {x + spriteW, y + spriteH}};
+
     Player(int xa, int ya, int xs, int ys)
     {
         x = xa;
@@ -127,9 +128,6 @@ public:
             }
         }
     }
-    void calculateTails()
-    {
-    }
 };
 
 int main()
@@ -203,7 +201,6 @@ int main()
 
         player.move();
         player.eatFruit();
-        player.calculateTails();
 
         gameOver = player.outoFBound();
         square.setPosition(sf::Vector2f(player.x, player.y));
